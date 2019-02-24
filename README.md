@@ -1,3 +1,5 @@
+# Live Demo: [here](bhazman.me/colorclock)
+
 # What does it do?
 Depending on the time of day the background of the page will change.
 Additionally, the text shown will show the color that represents the current time. The text itself's color is the inverse of whatever color is displayed.
