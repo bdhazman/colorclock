@@ -1,4 +1,4 @@
-# Live Demo: [here](bhazman.me/colorclock)
+# Live Demo: [here](https://bhazman.me/colorclock)
 
 # What does it do?
 Depending on the time of day the background of the page will change.
