@@ -73,7 +73,7 @@ class ClockApp extends Component{
     super(props);
     this.state = {
       paused: false,
-      time: formattedTime,
+      time: formattedTime(),
       displayTime: false,
       hex: calculateHexTime(),
       inverseHex: calculateInverseHexTime()
