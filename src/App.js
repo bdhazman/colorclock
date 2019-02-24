@@ -63,11 +63,18 @@ function calculateInverseHexTime(){
   return "#" + hexHours + hexMinutes + hexSeconds;
 }
 
+function formattedTime(){
+  var date = new Date();
+  return date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+}
+
 class ClockApp extends Component{
   constructor(props){
     super(props);
     this.state = {
       paused: false,
+      time: formattedTime,
+      displayTime: false,
       hex: calculateHexTime(),
       inverseHex: calculateInverseHexTime()
     };
@@ -81,6 +88,11 @@ class ClockApp extends Component{
   }
 
   tick() {
+    if(this.state.displayTime){
+      this.setState({
+        time: formattedTime()
+      })
+    }
     if(!this.state.paused){
       var hexCode = calculateHexTime();
       this.setState({
@@ -91,11 +103,15 @@ class ClockApp extends Component{
   }
 
   handleClick = () => {
-    console.log("hello"
-    )
     this.setState({
       paused: !this.state.paused
     });
+  }
+
+  toggleTime = () => {
+    this.setState({
+      displayTime: !this.state.displayTime
+    })
   }
 
   render(){
@@ -125,7 +141,7 @@ class ClockApp extends Component{
         transition: '.5s ease-in',
         background: this.state.hex}}>
 
-        <div style={clockStyle}>{this.state.hex}</div>
+        <div style={clockStyle} onClick={this.toggleTime}>{this.state.displayTime ? this.state.time : this.state.hex}</div>
         <img onClick={this.handleClick} alt={this.state.paused ? "play" : "pause"} src={this.state.paused ? play : pause} style={buttonStyle}/>
       </div>
     );
