@@ -1,0 +1,15 @@
+{
+  "main.css": "/colorclock/static/css/main.e96b5de7.chunk.css",
+  "main.js": "/colorclock/static/js/main.d5614525.chunk.js",
+  "main.js.map": "/colorclock/static/js/main.d5614525.chunk.js.map",
+  "runtime~main.js": "/colorclock/static/js/runtime~main.2dd13109.js",
+  "runtime~main.js.map": "/colorclock/static/js/runtime~main.2dd13109.js.map",
+  "static/js/2.e2a03234.chunk.js": "/colorclock/static/js/2.e2a03234.chunk.js",
+  "static/js/2.e2a03234.chunk.js.map": "/colorclock/static/js/2.e2a03234.chunk.js.map",
+  "index.html": "/colorclock/index.html",
+  "precache-manifest.2f8b3109179fb93ff9caef808c4f120f.js": "/colorclock/precache-manifest.2f8b3109179fb93ff9caef808c4f120f.js",
+  "service-worker.js": "/colorclock/service-worker.js",
+  "static/css/main.e96b5de7.chunk.css.map": "/colorclock/static/css/main.e96b5de7.chunk.css.map",
+  "static/media/pause.svg": "/colorclock/static/media/pause.cd7da876.svg",
+  "static/media/play.svg": "/colorclock/static/media/play.0afc49f2.svg"
+}
