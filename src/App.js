@@ -126,7 +126,7 @@ class ClockApp extends Component{
         background: this.state.hex}}>
 
         <div style={clockStyle}>{this.state.hex}</div>
-        <img onClick={this.handleClick} src={this.state.paused ? play : pause} style={buttonStyle}/>
+        <img onClick={this.handleClick} alt={this.state.paused ? "play" : "pause"} src={this.state.paused ? play : pause} style={buttonStyle}/>
       </div>
     );
   }
