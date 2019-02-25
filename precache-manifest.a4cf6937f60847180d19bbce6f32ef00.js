@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cc39a32388f2867e7a1d",
+    "revision": "be6bbbbe5c6b2d8b8cc8",
     "url": "/colorclock/static/css/main.e96b5de7.chunk.css"
   },
   {
-    "revision": "cc39a32388f2867e7a1d",
-    "url": "/colorclock/static/js/main.cc39a323.chunk.js"
+    "revision": "be6bbbbe5c6b2d8b8cc8",
+    "url": "/colorclock/static/js/main.be6bbbbe.chunk.js"
   },
   {
     "revision": "2dd13109ec97fe7ecd04",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/colorclock/static/media/pause.cd7da876.svg"
   },
   {
-    "revision": "f5ca2369a4b16e1af77766b2924e1c04",
+    "revision": "9a6e3850ad1d054eed6d4686eced00b2",
     "url": "/colorclock/index.html"
   }
 ];
