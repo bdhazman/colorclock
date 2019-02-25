@@ -65,7 +65,21 @@ function calculateInverseHexTime(){
 
 function formattedTime(){
   var date = new Date();
-  return date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+  var hours = date.getHours().toString();
+  var minutes = date.getMinutes().toString();
+  var seconds = date.getSeconds().toString();
+
+  if (hours.length === 1){
+    hours = "0" + hours;
+  }
+  if (minutes.length === 1){
+    minutes = "0" + minutes;
+  }
+  if (seconds.length === 1){
+    seconds = "0" + seconds;
+  }
+
+  return hours + ":" + minutes + ":" + seconds;
 }
 
 class ClockApp extends Component{
@@ -116,12 +130,12 @@ class ClockApp extends Component{
 
   render(){
     var clockStyle = {
-      fontFamily: 'Roboto',
+      fontFamily: 'Roboto Mono',
       fontSize: '18vw',
       width: '100vw',
       textAlign: 'center',
       transition: '.5s ease-in',
-      color: this.state.inverseHex
+      color: this.state.inverseHex,
     }
 
     var buttonStyle = {
